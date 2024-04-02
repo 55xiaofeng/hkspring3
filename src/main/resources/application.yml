@@ -1,0 +1,20 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: hkspringexam1
+  datasource:
+    username: clouddemo
+    password: tfry0411
+    url: jdbc:postgresql://192.168.10.23:5432/clouddemo?currentSchema=core
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    show-sql: true
+    database: postgresql
+    hibernate:
+      ddl-auto: none
+      properties:
+        hibernate:
+          dialect: org.hibernate.dialect.PostgreSQLDialect
+          temp:
+            use_jdbc_metadata_defaults: false

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="https://jakarta.ee/xml/ns/persistence/orm"
+                 version="3.0">
+
+    <entity class="hkspringexam.hkspringexam1.entity.MdmAcctConn000Entity">
+        <table name="mdm_acct_conn_000" schema="core" catalog="clouddemo"/>
+        <id-class class="hkspringexam.hkspringexam1.entity.MdmAcctConn000EntityPK"/>
+        <attributes>
+            <id name="legalEntity">
+                <column name="legal_entity"/>
+            </id>
+            <id name="acId">
+                <column name="ac_id"/>
+            </id>
+            <id name="acSeqn">
+                <column name="ac_seqn"/>
+            </id>
+            <id name="innerAcId">
+                <column name="inner_ac_id"/>
+            </id>
+            <basic name="prdtModuleCode">
+                <column name="prdt_module_code"/>
+            </basic>
+            <basic name="innerAcSts">
+                <column name="inner_ac_sts"/>
+            </basic>
+            <basic name="updTime">
+                <column name="upd_time"/>
+            </basic>
+            <basic name="mac">
+                <column name="mac"/>
+            </basic>
+            <basic name="vpdEntity">
+                <column name="vpd_entity"/>
+            </basic>
+            <basic name="curCode">
+                <column name="cur_code"/>
+            </basic>
+            <basic name="prdtNo">
+                <column name="prdt_no"/>
+            </basic>
+            <basic name="brNo">
+                <column name="br_no"/>
+            </basic>
+        </attributes>
+    </entity>
+    <entity class="hkspringexam.hkspringexam1.entity.OrderTableEntity">
+        <table name="order_table" schema="clouddemo" catalog="clouddemo"/>
+        <attributes>
+            <id name="orderId">
+                <column name="order_id"/>
+            </id>
+            <basic name="userId">
+                <column name="user_id"/>
+            </basic>
+            <basic name="orderName">
+                <column name="order_name"/>
+            </basic>
+            <basic name="orderDate">
+                <column name="order_date"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="https://jakarta.ee/xml/ns/persistence/orm"
+                 version="3.0">
+
+    <entity class="hkspringexam.hkspringexam1.entity.OrderTableEntity">
+        <table name="order_table" schema="clouddemo" catalog="clouddemo"/>
+        <attributes>
+            <id name="orderId">
+                <column name="order_id"/>
+            </id>
+            <basic name="userId">
+                <column name="user_id"/>
+            </basic>
+            <basic name="orderName">
+                <column name="order_name"/>
+            </basic>
+            <basic name="orderDate">
+                <column name="order_date"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>
